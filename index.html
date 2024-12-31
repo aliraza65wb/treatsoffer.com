@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +16,7 @@
       height: 100vh;
       background-color: #f9f9f9;
     }
+
     .badge-container {
       text-align: center;
       background-color: #fff;
@@ -25,6 +27,7 @@
       max-width: 400px;
       margin: 0 20px;
     }
+
     .badge {
       display: inline-block;
       background-color: #007bff;
@@ -35,32 +38,48 @@
       border-radius: 20px;
       margin-bottom: 15px;
     }
+
     .message {
       font-size: 16px;
       color: #333;
       margin-bottom: 10px;
     }
+
     .email {
       font-size: 14px;
       color: #555;
     }
+
     .email a {
       color: #007bff;
       text-decoration: none;
     }
+
     .email a:hover {
       text-decoration: underline;
     }
+
+    /* Media query for mobile screens */
+    @media screen and (max-width: 600px) {
+      .badge {
+        font-size: 14px;
+        padding: 8px 15px;
+        white-space: nowrap;
+        /* Ensure the text stays in one line */
+      }
+    }
   </style>
 </head>
+
 <body>
   <div class="badge-container">
     <div class="badge">This offer is currently unavailable</div>
     <div class="message">Sorry for any inconvenience this has caused.</div>
     <div class="email">
-      For any questions or concerns, please email: 
+      For any questions or concerns, please email:
       <a href="mailto:treatsoffer@gmail.com">treatsoffer@gmail.com</a>
     </div>
   </div>
 </body>
+
 </html>
