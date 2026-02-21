@@ -1,89 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Offer Unavailable</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-color: #f9f9f9;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dog Experience Offer</title>
 
-    .badge-container {
-      text-align: center;
-      background-color: #fff;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      max-width: 400px;
-      margin: 0 20px;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #e9f1ff, #f5f8ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
 
-    .badge {
-      display: inline-block;
-      background-color: #007bff;
-      color: #fff;
-      font-size: 18px;
-      font-weight: bold;
-      padding: 10px 20px;
-      border-radius: 20px;
-      margin-bottom: 15px;
-    }
+.container {
+  max-width: 700px;
+  width: 90%;
+  background: #ffffff;
+  border-radius: 25px;
+  padding: 50px 40px;
+  text-align: center;
+  box-shadow: 0 25px 60px rgba(13, 110, 253, 0.15);
+}
 
-    .message {
-      font-size: 16px;
-      color: #333;
-      margin-bottom: 10px;
-    }
+/* Circular Image */
+.header img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 25px;
+  box-shadow: 0 10px 25px rgba(13, 110, 253, 0.25);
+}
 
-    .email {
-      font-size: 14px;
-      color: #555;
-    }
+h1 {
+  color: #0d47a1;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
 
-    .email a {
-      color: #007bff;
-      text-decoration: none;
-    }
+.badges {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 25px 0;
+}
 
-    .email a:hover {
-      text-decoration: underline;
-    }
+.badge {
+  background: #e7f0ff;
+  color: #0d6efd;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
 
-    /* Media query for mobile screens */
-    @media screen and (max-width: 600px) {
-      .badge {
-        font-size: 14px;
-        padding: 8px 15px;
-        white-space: nowrap;
-        /* Ensure the text stays in one line */
-      }
-      .message {
-        white-space: nowrap;
-        /* Ensure the text stays in one line */
-      }
-    }
-  </style>
+.content {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.content h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0d47a1;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+ul li::marker {
+  color: #0d6efd;
+}
+
+.email {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 17px;
+}
+
+.email a {
+  color: #0d6efd;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.email a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  margin-top: 35px;
+  font-size: 14px;
+  color: #777;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 35px 20px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+}
+</style>
 </head>
 
 <body>
-  <div class="badge-container">
-    <div class="badge">This offer is currently unavailable</div>
-    <div class="message">Sorry for any inconvenience this has caused.</div>
-    <div class="email">
-      For any questions or concerns, please email:
-      <a href="mailto:treatsoffer@gmail.com">treatsoffer@gmail.com</a>
-    </div>
-  </div>
-</body>
 
+<div class="container">
+
+  <div class="header">
+    <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16?w=300" alt="Dog">
+   
+  </div>
+
+  <div class="badges">
+    <div class="badge">No credit card required</div>
+    <div class="badge">Free Shipping</div>
+    <div class="badge">No Hidden Fees</div>
+  </div>
+
+  <div class="content">
+ <h1>Share your dog's experience with us and get a free Jar</h1>
+    <ul>
+      <li>Must have had the product for <strong>at least 15 days</strong> before participating.</li>
+      <li>Offer can only be claimed once. Limited to one Jar per household.</li>
+      <li>Valid with a full-price purchase only. Not valid with other promotions or rebates.</li>
+      <li>This offer is not dependent on the quality of feedback you share with us.</li>
+    </ul>
+
+    <div class="email">
+      To get started, please email 
+      <a href="mailto:treatsoffer@gmail.com">treatsoffer@gmail.com</a> 
+      with your order ID for proof of purchase.
+    </div>
+
+  </div>
+
+ 
+
+</div>
+
+</body>
 </html>
+
